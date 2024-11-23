@@ -1,0 +1,74 @@
+.wrapper {
+    width: 1920px;
+    height: 4788px;
+    margin: 0 auto;
+    background-color: #F1E4D7;
+    padding-top: 10px;
+}    
+
+.header {
+    width: 1784px; /* Ширина меньше ширины родителя */
+    height: 95px;
+    display: flex;
+    align-items: center; /* Вертикальное выравнивание элементов по центру */
+    background-color: #FCF6EE;
+    border-radius: 30px;  
+    margin: 20px auto; /* Отступ сверху и центрирование по горизонтали */
+}
+
+.left {
+    display: flex;
+    gap: 30px; /* Промежуток между элементами */
+}
+
+.square {
+    margin-left: 35px; /* Отступ слева для элемента */
+    width: 69px; /* Ширина элемента */
+    height: 69px; /* Высота элемента */
+    background: #EBD3B7; /* Цвет фона */
+    border-radius: 25px; /* Закругленные углы */
+}
+
+.right {
+    display: flex; /* Создает флекс-контейнер */
+    align-items: center; /* Центрирует элементы по вертикали внутри контейнера */
+    justify-content: flex-end; /* Выравнивание элементов по правому краю контейнера */
+    margin-left: 1340px; /* Устанавливаем отступ между левым краем header и rounded-rectangle */
+}
+
+.rounded-rectangle {
+    width: 293px; /* Ширина прямоугольника */
+    height: 52px; /* Высота прямоугольника */
+    background-color: #EBD3B7; /* Цвет фона */
+    border-radius: 10px; /* Закругленные углы */
+}
+
+.image-container {
+    position: relative; /* Устанавливает контекст для абсолютного позиционирования */
+}
+
+.photo {
+    margin-top: 60px;
+    margin-left: 70px;
+    width: 1784px; /* Ширина изображения */
+    height: 645px; /* Высота изображения */
+}
+
+.text-rectangle {
+    position: absolute; /* Абсолютное позиционирование относительно контейнера */
+    top: 100px; /* Расстояние от верхней границы контейнера */
+    left: 110px; /* Расстояние от левой границы контейнера */
+    width: 795px; /* Ширина прямоугольника с текстом */
+    height: 350px; /* Высота прямоугольника с текстом */
+    background-color: #FCF6EE; /* Полупрозрачный белый цвет фона */
+    border-radius: 30px; /* Закругленные углы */
+    display: flex; /* Используем Flexbox для центрирования текста внутри прямоугольника */
+    justify-content: center; /* Центрируем текст по горизонтали */
+    align-items: center; /* Центрируем текст по вертикали */
+    opacity: 70%;
+}
+
+.text-rectangle p {
+    margin: 0; /* Убираем отступы у параграфа */
+}
+
