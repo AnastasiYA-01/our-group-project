@@ -33,7 +33,7 @@
     display: flex; /* Создает флекс-контейнер */
     align-items: center; /* Центрирует элементы по вертикали внутри контейнера */
     justify-content: flex-end; /* Выравнивание элементов по правому краю контейнера */
-    margin-left: 1340px; /* Устанавливаем отступ между левым краем header и rounded-rectangle */
+    margin-left: 1110px; /* Устанавливаем отступ между левым краем header и rounded-rectangle */
 }
 
 .rounded-rectangle {
@@ -41,10 +41,13 @@
     height: 52px; /* Высота прямоугольника */
     background-color: #EBD3B7; /* Цвет фона */
     border-radius: 10px; /* Закругленные углы */
+    margin: 0;
+    
 }
 
 .image-container {
     position: relative; /* Устанавливает контекст для абсолютного позиционирования */
+    margin: 0;
 }
 
 .photo {
@@ -67,4 +70,10 @@
     justify-content: left; /* Центрируем текст по горизонтали */
     align-items: center; /* Центрируем текст по вертикали */
     opacity: 70%;
+}
+
+* {
+    margin: 0; /* Убирает все внешние отступы */
+    padding: 0; /* Убирает все внутренние отступы */
+    box-sizing: border-box; /* Учитывает границы и отступы в ширине и высоте элементов */
 }
