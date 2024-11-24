@@ -33,7 +33,7 @@
     display: flex; /* Создает флекс-контейнер */
     align-items: center; /* Центрирует элементы по вертикали внутри контейнера */
     justify-content: flex-end; /* Выравнивание элементов по правому краю контейнера */
-    margin-left: 1110px; /* Устанавливаем отступ между левым краем header и rounded-rectangle */
+    margin-left: 1130px; /* Устанавливаем отступ между левым краем header и rounded-rectangle */
 }
 
 .rounded-rectangle {
@@ -73,7 +73,29 @@
 }
 
 * {
-    margin: 0; /* Убирает все внешние отступы */
-    padding: 0; /* Убирает все внутренние отступы */
-    box-sizing: border-box; /* Учитывает границы и отступы в ширине и высоте элементов */
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+.element {
+    display: flex; /* Используем Flexbox для выравнивания элементов */
+    align-items: center; /* Выравниваем элементы по центру по вертикали */
+}
+
+.container {
+    display: flex; /* Создаем контейнер для Flexbox */
+}
+
+.text {
+    margin-left: 69px;
+    margin-right: 20px; /* Отступ между текстом и изображением */
+}
+
+.image img {
+    margin-top: 69px;
+    margin-right: 69px;
+    height: auto; /* Сохраняем пропорции изображения */
+    width: 421px;
+    height: 466.38px;
 }
