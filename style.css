@@ -42,6 +42,7 @@
     background-color: #EBD3B7; /* Цвет фона */
     border-radius: 10px; /* Закругленные углы */
     margin: 0;
+    cursor: pointer; 
     
 }
 
@@ -49,6 +50,7 @@
     position: relative; /* Устанавливает контекст для абсолютного позиционирования */
     margin: 0;
 }
+
 
 .photo {
     margin-top: 60px;
@@ -99,3 +101,55 @@
     width: 421px;
     height: 466.38px;
 }
+
+.text_cen {
+    display: flex; /* Включаем Flexbox */
+    margin-top: 40px;
+    margin-left: 798px;
+}
+
+.container_tab {
+    width: 90%; /* Устанавливаем ширину контейнера */
+    margin: 0 auto; /* Центрируем контейнер */
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Три равные колонки */
+    gap: 40px; /* Промежуток между элементами */
+    margin-top: 40px; /* Отступ сверху */
+}
+
+.grid-header {
+    font-size: 48px;
+    color: #633800;
+    text-align: center;
+    font-weight: normal;
+}
+
+.grid-item {
+    background-color: #FCF6EE; /* Цвет фона ячеек */
+    color: #633800; /* Цвет текста */
+    font-size: 48px;
+    padding: 15px 20px; /* Внутренние отступы (сверху/снизу и справа/слева) */
+    text-align: left; /* Выравнивание текста влево */
+    display: flex; /* Используем flexbox для выравнивания */
+    align-items: center; /* Центрируем элементы по вертикали */
+    border-radius: 10px; /* Закругление углов ячеек */
+    margin-bottom: none; /* Отступ между ячейками */
+}
+
+.grid-item:hover {
+    background-color: #EBD3B7; /* Изменяем цвет фона при наведении */
+    transition: background-color 0.3s ease; /* Плавный переход цвета */
+}
+
+.app__list-checkbox {
+    border-radius: 15px;
+    width: 49px; 
+    height: 49px;
+    margin-right: 10px; /* Отступ между чекбоксом и текстом */
+    color: #EBD3B7; 
+    cursor: pointer; 
+}
+
