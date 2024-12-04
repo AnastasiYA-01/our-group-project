@@ -46,11 +46,34 @@
     
 }
 
-.image-container {
+.image-container1 {
+    position: relative; /* Устанавливает контекст для абсолютного позиционирования */
+    margin: 0;
+    transition: background-color 0.3s ease; /* Плавный переход цвета */
+    border-radius: 10px; /* Закругленные углы */
+}
+
+.rounded-rectangle :hover {
+    position: relative; /* Устанавливает контекст для абсолютного позиционирования */
+    margin: 0;
+    background-color:  #FCF6EE; /* Изменяем цвет фона при наведении */
+    border-radius: 10px; /* Закругленные углы */
+    opacity: 0.95;
+
+}
+
+.image-container1  :hover {
+    position: relative; /* Устанавливает контекст для абсолютного позиционирования */
+    margin: 0;
+    background-color:  #FCF6EE; /* Изменяем цвет фона при наведении */
+    border-radius: 10px; /* Закругленные углы */
+    opacity: 0.95;
+}
+
+.image-container2 {
     position: relative; /* Устанавливает контекст для абсолютного позиционирования */
     margin: 0;
 }
-
 
 .photo {
     margin-top: 60px;
@@ -132,7 +155,7 @@
     color: #633800; /* Цвет текста */
     font-size: 48px;
     padding: 15px 20px; /* Внутренние отступы (сверху/снизу и справа/слева) */
-    text-align: left; /* Выравнивание текста влево */
+    text-align: center; /* Выравнивание текста влево */
     display: flex; /* Используем flexbox для выравнивания */
     align-items: center; /* Центрируем элементы по вертикали */
     border-radius: 10px; /* Закругление углов ячеек */
@@ -153,3 +176,36 @@
     cursor: pointer; 
 }
 
+.custom-block {
+    width: 414px; /* Ширина блока */
+    height: 91px; /* Высота блока */
+    position: absolute; /* Абсолютное позиционирование */
+    top: 2235px; /* Центрируем по вертикали */
+    left: 975px; /* Центрируем по горизонтали */
+    gap: 0px; 
+    border-radius: 50px; /* Скругление углов */
+    background-color: #FCF6EE; /* Цвет фона блока */
+    display: flex; /* Используем Flexbox для центрирования текста */
+    justify-content: center; /* Центрируем текст по горизонтали */
+    align-items: center; /* Центрируем текст по вертикали */
+}
+
+.custom-block:hover {
+    background-color: #EBD3B7; 
+    cursor: pointer;
+}
+
+.cell {
+    width: 425px; /* Ширина ячейки */
+    background-color: #FCF6EE; /* Цвет фона ячеек */
+    color: #633800; /* Цвет текста */
+    font-size: 48px;
+    padding: 15px; /* Внутренние отступы */
+    text-align: center; /* Выравнивание текста по центру */
+    border-radius: 10px; /* Закругление углов ячеек */
+}
+
+.cell:hover {
+    background-color: #EBD3B7; /* Изменяем цвет фона при наведении */
+    transition: background-color 0.3s ease; /* Плавный переход цвета */
+}
