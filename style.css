@@ -184,8 +184,9 @@
     display: flex; /* Используем Flexbox для центрирования текста */
     justify-content: center; /* Центрируем текст по горизонтали */
     align-items: center; /* Центрируем текст по вертикали */
-    margin: none;
-    margin-left: 320px;
+    margin-top: none;
+    margin-left: 305px;
+    transform: translateY(-500px); 
     }
 
 .custom-block:hover {
@@ -194,13 +195,15 @@
 }
 
 .cell {
-    width: 425px; /* Ширина ячейки */
+    width: 640px; /* Ширина блока */
+    height: 220px; /* Высота блока */
     background-color: #FCF6EE; /* Цвет фона ячеек */
     color: #633800; /* Цвет текста */
     font-size: 48px;
     padding: 15px; /* Внутренние отступы */
     text-align: center; /* Выравнивание текста по центру */
     border-radius: 10px; /* Закругление углов ячеек */
+    margin: 0 10px; /* Отступы между ячейками по горизонтали */
 }
 
 .cell:hover {
@@ -227,3 +230,65 @@ html, body {
     margin-left: auto; /* Это свойство заставляет второй вектор двигаться к правому краю */
 }
 
+.container_vibora {
+    display: flex; /* Используем Flexbox */
+    padding: 20px;
+    justify-content: center; /* Центрируем содержимое по горизонтали */
+    margin-top: 200px; /* Отступ сверху для отделения от блока "Составить образ" */
+    margin-left: -550px;
+}
+
+.container-rec {
+    position: relative; /* Контейнер с относительным позиционированием */
+    width: 300px; /* Укажите ширину контейнера */
+    height: 200px; /* Укажите высоту контейнера */
+}
+
+.image1 {
+    position: absolute; /* Абсолютное позиционирование для наложения */
+    z-index: 1; /* Этот элемент будет ниже */
+}
+
+.verh-block {
+    position: absolute; /* Абсолютное позиционирование для наложения */
+    z-index: 3; /* Этот элемент будет выше */
+    white-space: pre-wrap;
+    font-family: 'Poiret One', sans-serif;
+    font-size: 48px;
+    color: #633800;
+    text-align: center; /* Центрируем текст внутри блока */
+    margin-top: 200px;
+}
+
+.container-text {
+    display: flex; /* Используем flexbox для выравнивания */
+    flex-direction: column; /* Располагаем элементы по вертикали */
+    align-items: center; /* Центрируем по горизонтали */
+    text-align: center; /* Центрируем текст внутри блока */ 
+}
+
+.container-svyaz {
+    margin-top: 600px;
+    display: flex; /* Используем flexbox */
+    flex-direction: column; /* Располагаем элементы по вертикали */
+    align-items: center; /* Центрируем по горизонтали */
+    justify-content: center; /* Центрируем по вертикали */
+    text-align: center; /* Центрируем текст внутри блоков */
+    font-family: 'Poiret One', sans-serif;
+    font-size: 48px; /* Используем vw для адаптивного размера шрифта */
+    color: #633800;
+    padding: 20px; /* Добавляем отступы для видимости */
+}
+
+.text-block {
+    margin: 30px; 
+}
+
+.line {
+    width: 1571px; /* Ширина линии в процентах от ширины окна */
+    height: 0; /* Высота линии (0 для горизонтальной линии) */
+    border-top: 1px solid #633800; /* Верхняя граница для создания линии */
+    opacity: 1; /* Устанавливаем непрозрачность на 1 для видимости */
+    position: relative; /* Изменяем на relative для нормального потока документа */
+    margin: 20px; /* Добавляем отступы сверху и снизу для линии */
+}
