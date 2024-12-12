@@ -179,16 +179,14 @@
 .custom-block {
     width: 414px; /* Ширина блока */
     height: 91px; /* Высота блока */
-    position: absolute; /* Абсолютное позиционирование */
-    top: 2235px; /* Центрируем по вертикали */
-    left: 975px; /* Центрируем по горизонтали */
-    gap: 0px; 
     border-radius: 50px; /* Скругление углов */
     background-color: #FCF6EE; /* Цвет фона блока */
     display: flex; /* Используем Flexbox для центрирования текста */
     justify-content: center; /* Центрируем текст по горизонтали */
     align-items: center; /* Центрируем текст по вертикали */
-}
+    margin: none;
+    margin-left: 320px;
+    }
 
 .custom-block:hover {
     background-color: #EBD3B7; 
@@ -209,3 +207,23 @@
     background-color: #EBD3B7; /* Изменяем цвет фона при наведении */
     transition: background-color 0.3s ease; /* Плавный переход цвета */
 }
+
+html, body {
+    height: 100%; /* Устанавливаем высоту для html и body */
+    margin: 0; /* Убираем отступы */
+}
+
+.container_vek {
+    display: flex; /* Используем Flexbox для расположения элементов */
+    justify-content: space-between; /* Распределяем пространство между элементами */
+    align-items: center; /* Центрируем элементы по вертикали */
+}
+
+.Vector1 {
+    flex: 0 0 auto; /* Не растягиваем первый вектор */
+}
+
+.Vector2 {
+    margin-left: auto; /* Это свойство заставляет второй вектор двигаться к правому краю */
+}
+
