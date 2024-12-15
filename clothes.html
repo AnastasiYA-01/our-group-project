@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./clothes.css">
+    <title>На каждый день</title>
+    <style>
+        body {
+            font-family: 'Poiret One', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <div class="wrapper">
+        <header class="header">
+            <div class="left">
+                <div class="square">
+                    <img src="./moda.png" alt="Фото" height="69px" width="69px">
+                </div>
+                <div style="font-family: Poiret One, sans-serif; font-size: 48px; text-align: center; color: #633800; margin-top: 5px;">
+                    <a href="index.html" style="text-decoration: none; color: #633800;">YourLook</a>
+                </div>
+            </div>
+            
+            <div class="right">
+                <div class="image-container1" onclick="location.href='profile.html'">
+                    <div class="rounded-rectangle">
+                        <div style="font-family: Poiret One, sans-serif; font-size: 36px; text-align: center; color: #633800;">
+                            <p>Профиль</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="grid-container">
+            <div class="left-pro">
+                <div class="rectangle">
+                    <img src="">
+                    <div class="text-pro">
+                        <p>Добавить одежду</p>
+                    </div>
+                </div>
+            </div>
+            <div class="strelki">
+                <div class="selection-block" id="clothes-block">
+                    <button class="arrow left1" onclick="prevItem('clothes')">&#9664;</button>
+                    <div class="selection" id="selection-clothes">Часть одежды</div>
+                    <button class="arrow right1" onclick="nextItem('clothes')">&#9654;</button>
+                </div>
+                <div class="selection-block" id="color-block">
+                    <button class="arrow left1" onclick="prevItem('color')">&#9664;</button>
+                    <div class="selection" id="selection-color">Цветовая гамма</div>
+                    <button class="arrow right1" onclick="nextItem('color')">&#9654;</button>
+                </div>
+                <div class="selection-block" id="style-block">
+                    <button class="arrow left1" onclick="prevItem('style')">&#9664;</button>
+                    <div class="selection" id="selection-style">Стиль</div>
+                    <button class="arrow right1" onclick="nextItem('style')">&#9654;</button>
+                </div>
+            </div>
+            <div class="container-oval">
+                <div class="oval"></div>
+                
+            </div>
+            
+
+        </div>
+
+        <script src="./closer.js"></script> 
+    </body>
+</html>
+
+<script>

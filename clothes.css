@@ -1,0 +1,179 @@
+.wrapper {
+    width: 1920px;
+    height: 2000px;
+    margin: 0 auto;
+    background-color: #F1E4D7;
+    padding-top: 10px;
+}    
+
+.header {
+    width: 1784px; /* Ширина меньше ширины родителя */
+    height: 95px;
+    display: flex;
+    align-items: center; /* Вертикальное выравнивание элементов по центру */
+    background-color: #FCF6EE;
+    border-radius: 30px;  
+    margin: 20px auto; /* Отступ сверху и центрирование по горизонтали */
+}
+
+.left {
+    display: flex;
+    gap: 30px; /* Промежуток между элементами */
+}
+
+.square {
+    margin-left: 35px; /* Отступ слева для элемента */
+    width: 69px; /* Ширина элемента */
+    height: 69px; /* Высота элемента */
+    background: #EBD3B7; /* Цвет фона */
+    border-radius: 25px; /* Закругленные углы */
+}
+
+.right {
+    display: flex; /* Создает флекс-контейнер */
+    align-items: center; /* Центрирует элементы по вертикали внутри контейнера */
+    justify-content: flex-end; /* Выравнивание элементов по правому краю контейнера */
+    margin-left: 1130px; /* Устанавливаем отступ между левым краем header и rounded-rectangle */
+}
+
+.rounded-rectangle {
+    width: 293px; /* Ширина прямоугольника */
+    height: 52px; /* Высота прямоугольника */
+    background-color: #EBD3B7; /* Цвет фона */
+    border-radius: 10px; /* Закругленные углы */
+    margin: 0;
+    cursor: pointer; 
+    
+}
+
+.image-container1 {
+    position: relative; /* Устанавливает контекст для абсолютного позиционирования */
+    margin: 0;
+    transition: background-color 0.3s ease; /* Плавный переход цвета */
+    border-radius: 10px; /* Закругленные углы */
+}
+
+.rounded-rectangle :hover {
+    position: relative; /* Устанавливает контекст для абсолютного позиционирования */
+    margin: 0;
+    background-color:  #FCF6EE; /* Изменяем цвет фона при наведении */
+    border-radius: 10px; /* Закругленные углы */
+    opacity: 0.95;
+
+}
+
+.image-container1  :hover {
+    position: relative; /* Устанавливает контекст для абсолютного позиционирования */
+    margin: 0;
+    background-color:  #FCF6EE; /* Изменяем цвет фона при наведении */
+    border-radius: 10px; /* Закругленные углы */
+    opacity: 0.95;
+}
+
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+/* шапка */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Три равные колонки */
+    gap: 20px; /* Промежуток между колонками */
+}
+
+.photo-block {
+    text-align: center; /* Центрирование текста */
+}
+
+.rectangle {
+    top: 100px; /* Расстояние от верхней границы контейнера */
+    left: 170px; /* Расстояние от левой границы контейнера */
+    width: 605px; /* Ширина прямоугольника с текстом */
+    height: 340px; /* Высота прямоугольника с текстом */
+    background-color: #FCF6EE; /* Полупрозрачный белый цвет фона */
+    border-radius: 30px; /* Закругленные углы */
+    position: relative; /* Для позиционирования текста внутри круга */
+}
+
+.text-pro {
+    white-space: pre-wrap;
+    font-family: Poiret One, sans-serif;
+    font-size: 36px;
+    text-align: center; /* Центрируем текст */
+    color: #633800;
+    position: absolute; /* Позволяет позиционировать текст относительно родителя */
+    top: 50%; /* Позиционируем по центру вертикально */
+    left: 50%; /* Позиционируем по центру горизонтально */
+    transform: translate(-50%, +320%); /* Центрируем текст по горизонтали и вертикали */
+    width: 304px; /* Ширина текстового блока */
+    height: 67px; /* Высота текстового блока */
+    border-radius: 10px; /* Скругление углов текстового блока (по желанию) */
+    background-color: #FCF6EE; /* Цвет фона блока */
+    display: flex; /* Используем flex для центрирования текста внутри блока */
+    justify-content: center; /* Центрируем текст по горизонтали */
+    align-items: center; /* Центрируем текст по вертикали */
+}
+
+.text-pro:hover {
+    cursor: pointer;
+    background-color: #EBD3B7; 
+}
+
+.arrow {
+    font-size: 40px; /* Размер стрелок */
+    background-color: transparent; /* Прозрачный фон */
+    border: none; /* Убираем рамку */
+    color: #FCF6EE; /* Цвет стрелок */
+    padding: 10px; /* Отступ внутри кнопок */
+}
+
+.arrow:hover {
+    color: #EBD3B7; 
+}
+
+.selection {
+    font-family: 'Poiret One', sans-serif; /* Шрифт для текста */
+    font-size: 36px; /* Размер текста */
+    color: #633800; /* Цвет текста */
+    margin: 0 15px; /* Отступы слева и справа от текста */
+    white-space: nowrap; /* Запрещаем перенос текста на новую строку */
+}
+
+.strelki {
+    display: flex;
+    flex-direction: column; /* Выровнять элементы по вертикали */
+    align-items: center; /* Центрировать по горизонтали */
+    position: relative; /* Для корректного позиционирования дочерних элементов */
+    z-index: 1;
+    top: 140px;
+    left: 70px;
+}
+
+.selection-block {
+    display: flex;
+    align-items: center; /* Центрировать элементы внутри блока */
+    margin: 20px 0; /* Фиксированное расстояние между блоками */
+    
+}
+
+.container-oval {
+    position: relative; /* Позволяет использовать абсолютное позиционирование для дочерних элементов */
+    width: 100%; /* Занимает всю ширину родителя */
+    height: 100vh; /* Высота контейнера */
+}
+
+.oval {
+    width: 650px; /* Ширина элемента */
+    height: 650px; /* Высота элемента */
+    background-color: #FCF6EE; /* Цвет фона для визуализации */
+    position: absolute; /* Позволяет позиционировать элемент относительно родителя */
+    top: 862px; /* Позиция сверху */
+    right: 0; /* Прижимаем к правому краю родителя */
+    clip-path: ellipse(100% 50% at 100% 50%); /* Обрезка в форме овала, отображается только левая половина */
+    z-index: 1;
+    top: 10px;
+}
+
