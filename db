@@ -1,0 +1,86 @@
+-- Active: 1732439539275@@127.0.0.1@5432@postgres@public
+CREATE DATABASE site;
+
+CREATE TABLE users (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(255),
+    password VARCHAR(255)
+);
+
+CREATE TYPE style_enum AS ENUM(
+    'зима',
+    'весна',
+    'лето',
+    'осень'
+);
+
+CREATE TYPE name_clothes_enum AS ENUM(
+    'головной убор',
+    'верх',
+    'низ',
+    'обувь',
+    'верхняя одежда'
+);
+
+CREATE TYPE weather_enum AS ENUM(
+    'солнце',
+    'дождь',
+    'снег',
+    'ветер'
+);
+
+CREATE TYPE temp_enum AS ENUM(
+    '-15 и ниже',
+    'от -15 до 0',
+    'от 0 до +15',
+    'от +15 и выше'
+);
+
+CREATE TABLE elem_clothes (
+    id SERIAL PRIMARY KEY,
+    style "style_enum" NOT NULL,
+    name_clothes "name_clothes_enum" NOT NULL,
+    weather "weather_enum" NOT NULL,
+    temp "temp_enum" NOT NULL,
+    user_id INTEGER REFERENCES users (id)
+);
+
+CREATE TABLE head (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(255),
+    element_id INTEGER REFERENCES elem_clothes (id)
+);
+
+CREATE TABLE up (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(255),
+    element_id INTEGER REFERENCES elem_clothes (id)
+);
+
+CREATE TABLE down (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(255),
+    element_id INTEGER REFERENCES elem_clothes (id)
+);
+
+CREATE TABLE outerwear (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(255),
+    element_id INTEGER REFERENCES elem_clothes (id)
+);
+
+CREATE TABLE shoes (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(255),
+    element_id INTEGER REFERENCES elem_clothes (id)
+);
+
+CREATE TABLE fav_look (
+    id SERIAL PRIMARY KEY,
+    head_id INTEGER REFERENCES head (id),
+    up_id INTEGER REFERENCES up (id),
+    down_id INTEGER REFERENCES down (id),
+    shoes_id INTEGER REFERENCES shoes (id),
+    outerwear_id INTEGER REFERENCES outerwear (id),
+    user_id INTEGER REFERENCES users (id)
+);
