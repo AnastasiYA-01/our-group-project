@@ -1,6 +1,5 @@
--- Active: 1732439539275@@127.0.0.1@5432@postgres@public
+-- Active: 1732439539275@@127.0.0.1@5432@site@public
 CREATE DATABASE site;
-
 CREATE TABLE users (
     id SERIAL PRIMARY KEY,
     name VARCHAR(255),
@@ -42,36 +41,31 @@ CREATE TABLE elem_clothes (
     name_clothes "name_clothes_enum" NOT NULL,
     weather "weather_enum" NOT NULL,
     temp "temp_enum" NOT NULL,
+    photo TEXT,
     user_id INTEGER REFERENCES users (id)
 );
-
 CREATE TABLE head (
     id SERIAL PRIMARY KEY,
-    name VARCHAR(255),
     element_id INTEGER REFERENCES elem_clothes (id)
 );
 
 CREATE TABLE up (
     id SERIAL PRIMARY KEY,
-    name VARCHAR(255),
     element_id INTEGER REFERENCES elem_clothes (id)
 );
 
 CREATE TABLE down (
     id SERIAL PRIMARY KEY,
-    name VARCHAR(255),
     element_id INTEGER REFERENCES elem_clothes (id)
 );
 
 CREATE TABLE outerwear (
     id SERIAL PRIMARY KEY,
-    name VARCHAR(255),
     element_id INTEGER REFERENCES elem_clothes (id)
 );
 
 CREATE TABLE shoes (
     id SERIAL PRIMARY KEY,
-    name VARCHAR(255),
     element_id INTEGER REFERENCES elem_clothes (id)
 );
 
