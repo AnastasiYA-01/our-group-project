@@ -256,7 +256,7 @@ html, body {
     font-family: 'Poiret One', sans-serif;
     font-size: 48px;
     color: #633800;
-    text-align: center; /* Центрируем текст внутри блока */
+    text-align: center; 
     margin-top: 200px;
 }
 
@@ -275,7 +275,7 @@ html, body {
     justify-content: center; /* Центрируем по вертикали */
     text-align: center; /* Центрируем текст внутри блоков */
     font-family: 'Poiret One', sans-serif;
-    font-size: 48px; /* Используем vw для адаптивного размера шрифта */
+    font-size: 48px; 
     color: #633800;
     padding: 20px; /* Добавляем отступы для видимости */
 }
@@ -285,10 +285,10 @@ html, body {
 }
 
 .line {
-    width: 1571px; /* Ширина линии в процентах от ширины окна */
+    width: 1571px; 
     height: 0; /* Высота линии (0 для горизонтальной линии) */
     border-top: 1px solid #633800; /* Верхняя граница для создания линии */
-    opacity: 1; /* Устанавливаем непрозрачность на 1 для видимости */
+    opacity: 1; 
     position: relative; /* Изменяем на relative для нормального потока документа */
     margin: 20px; /* Добавляем отступы сверху и снизу для линии */
 }
