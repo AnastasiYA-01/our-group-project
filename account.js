@@ -18,10 +18,4 @@ function displayName() {
     }
 }
 
-// Вызываем displayName при загрузке страницы
-window.onload = displayName;
-
-// Добавляем обработчик события для кнопки "Сохранить"
-document.addEventListener('DOMContentLoaded', function() {
-    document.getElementById('saveButton').addEventListener('click', saveName);
-});
+document.getElementById('saveButton').addEventListener('click', saveName);
