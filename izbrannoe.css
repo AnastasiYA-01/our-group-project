@@ -1,0 +1,91 @@
+.wrapper {
+    width: 1920px;
+    height: 1000px;
+    margin: 0 auto;
+    background-color: #F1E4D7;
+    padding-top: 10px;
+}    
+
+.header {
+    width: 1784px; /* Ширина меньше ширины родителя */
+    height: 95px;
+    display: flex;
+    align-items: center; /* Вертикальное выравнивание элементов по центру */
+    background-color: #FCF6EE;
+    border-radius: 30px;  
+    margin: 20px auto; /* Отступ сверху и центрирование по горизонтали */
+}
+
+.left {
+    display: flex;
+    gap: 30px; /* Промежуток между элементами */
+}
+
+.square {
+    margin-left: 35px; /* Отступ слева для элемента */
+    width: 69px; /* Ширина элемента */
+    height: 69px; /* Высота элемента */
+    background: #EBD3B7; /* Цвет фона */
+    border-radius: 25px; /* Закругленные углы */
+}
+
+.right {
+    display: flex; /* Создает флекс-контейнер */
+    align-items: center; /* Центрирует элементы по вертикали внутри контейнера */
+    justify-content: flex-end; /* Выравнивание элементов по правому краю контейнера */
+    margin-left: 1130px; /* Устанавливаем отступ между левым краем header и rounded-rectangle */
+}
+
+.rounded-rectangle {
+    width: 293px; /* Ширина прямоугольника */
+    height: 52px; /* Высота прямоугольника */
+    background-color: #EBD3B7; /* Цвет фона */
+    border-radius: 10px; /* Закругленные углы */
+    margin: 0;
+    cursor: pointer; 
+    
+}
+
+.image-container1 {
+    position: relative; /* Устанавливает контекст для абсолютного позиционирования */
+    margin: 0;
+    transition: background-color 0.3s ease; /* Плавный переход цвета */
+    border-radius: 10px; /* Закругленные углы */
+}
+
+.rounded-rectangle :hover {
+    position: relative; /* Устанавливает контекст для абсолютного позиционирования */
+    margin: 0;
+    background-color:  #FCF6EE; /* Изменяем цвет фона при наведении */
+    border-radius: 10px; /* Закругленные углы */
+    opacity: 0.95;
+
+}
+
+.image-container1  :hover {
+    position: relative; /* Устанавливает контекст для абсолютного позиционирования */
+    margin: 0;
+    background-color:  #FCF6EE; /* Изменяем цвет фона при наведении */
+    border-radius: 10px; /* Закругленные углы */
+    opacity: 0.95;
+}
+
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%; /* Устанавливаем высоту для html и body */
+    margin: 0; /* Убираем отступы */
+}
+
+.container-profile {
+    display: flex; /* Используем Flexbox для расположения дочерних элементов */
+    justify-content: space-between; /* Размещаем элементы по краям */
+    align-items: center; /* Центрируем содержимое по вертикали */
+    height: 100%; /* Устанавливаем высоту для контейнера */
+    padding: 0 20px; /* Добавляем отступы по бокам, если нужно */
+    
+}
