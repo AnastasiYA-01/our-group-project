@@ -1,7 +1,8 @@
 .wrapper {
     width: 1920px;
-    height: 2000px;
-    margin: 0 auto;
+    height: 1600px;
+    margin-left:auto;
+    margin-right:auto;
     background-color: #F1E4D7;
     padding-top: 10px;
 }    
@@ -88,14 +89,23 @@
     text-align: center; /* Центрирование текста */
 }
 
-.rectangle {
-    top: 100px; /* Расстояние от верхней границы контейнера */
-    left: 170px; /* Расстояние от левой границы контейнера */
+.rectangle_1 {
+    top: 170px; /* Расстояние от верхней границы контейнера */
+    left: 180px; /* Расстояние от левой границы контейнера */
     width: 605px; /* Ширина прямоугольника с текстом */
     height: 340px; /* Высота прямоугольника с текстом */
     background-color: #FCF6EE; /* Полупрозрачный белый цвет фона */
     border-radius: 30px; /* Закругленные углы */
     position: relative; /* Для позиционирования текста внутри круга */
+    display: flex; /* Используем Flexbox для выравнивания содержимого */
+    flex-direction: column; /* Устанавливаем направление колонкой */
+    align-items: center; /* Центрируем по горизонтали */
+    justify-content: center; /* Центрируем по вертикали */
+}
+
+.image {
+    margin-bottom: 20px; /* Отступ между изображением и текстом */
+    cursor: pointer;
 }
 
 .text-pro {
@@ -132,6 +142,7 @@
 
 .arrow:hover {
     color: #EBD3B7; 
+    cursor: pointer;
 }
 
 .selection {
@@ -148,7 +159,7 @@
     align-items: center; /* Центрировать по горизонтали */
     position: relative; /* Для корректного позиционирования дочерних элементов */
     z-index: 1;
-    top: 140px;
+    top: 190px;
     left: 70px;
 }
 
@@ -170,10 +181,74 @@
     height: 650px; /* Высота элемента */
     background-color: #FCF6EE; /* Цвет фона для визуализации */
     position: absolute; /* Позволяет позиционировать элемент относительно родителя */
-    top: 862px; /* Позиция сверху */
+    top: 30px; /* Позиция сверху */
     right: 0; /* Прижимаем к правому краю родителя */
     clip-path: ellipse(100% 50% at 100% 50%); /* Обрезка в форме овала, отображается только левая половина */
     z-index: 1;
-    top: 10px;
+    display: flex; /* Используем Flexbox для центрирования текста */
+    align-items: center; /* Центрируем по вертикали */
+    justify-content: center; /* Центрируем по горизонтали */
+    text-align: center; /* Центрируем текст внутри блока */
 }
 
+.oval-text {
+    margin: 20px; /* Отступы вокруг текста для лучшего восприятия */
+    color: #D18955; /* Цвет текста, можно изменить по желанию */
+    font-size: 36px; /* Размер шрифта, можно изменить по желанию */
+    width: 460px;
+}
+
+
+
+
+
+
+
+
+.grid-center-vibor {
+    position: relative; 
+    display: grid;
+    justify-content: center; /* Центрируем содержимое по горизонтали */
+    align-items: center; /* Центрируем содержимое по вертикали */
+    margin: 0 auto; /* Центрируем контейнер по горизонтали */
+    bottom: 600px;
+
+    
+}
+
+.image-carousel {
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.image-container-foto {
+    margin-left: 80px; /* Отступ слева */
+    display: flex;
+    width: 1500px; /* Ширина контейнера */
+    justify-content: center; /* Центрируем прямоугольники внутри контейнера */
+}
+
+.rectang-foto {
+    border-radius: 30px;
+    width: 336px; /* Ширина прямоугольника */
+    height: 191px; /* Высота прямоугольника */
+    opacity: 0.5; /* Начальная непрозрачность */
+    transition: opacity 0.3s ease, width 0.3s ease, height 0.3s ease; /* Плавный переход для изменения прозрачности и размеров */
+}
+
+.rectang-foto.active {
+    opacity: 1; /* Полная непрозрачность для активного прямоугольника */
+    width: 511px; /* Ширина активного прямоугольника */
+    height: 290px; /* Высота активного прямоугольника */
+}
+
+.image-container-foto .rectang-foto {
+    margin-right: 80px; /* Отступ между прямоугольниками (если нужно) */
+}
+
+.text_cen {
+    display: flex; /* Включаем Flexbox */
+    justify-content: center; /* Центрируем по горизонтали */
+    align-items: center; /* Центрируем по вертикали */
+}
