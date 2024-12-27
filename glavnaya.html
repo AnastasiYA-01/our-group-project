@@ -59,23 +59,23 @@
         <div class="text_cen" style="white-space: pre-wrap; font-family: Poiret One, sans-serif; font-size: 48px; text-align: left; color: #633800;margin-bottom: 50px;">
             <p>Подбор образа</p>
         </div>
-        <div class="container_tab">
+        <div class="container_tab" id="quizForm">
             <div class="grid-container">
                 <div class="grid-header">Погодные условия</div>
                 <div class="grid-header">Температура</div>
                 <div class="grid-header">Стиль</div>
-                <div class="grid-item"> <input class="app__list-checkbox" type="checkbox">Солнце</div>
-                <div class="grid-item"> <input class="app__list-checkbox" type="checkbox">-15°C и ниже</div>
-                <div class="grid-item"> <input class="app__list-checkbox" type="checkbox">Спортивный</div>
-                <div class="grid-item"> <input class="app__list-checkbox" type="checkbox">Дождь</div>
-                <div class="grid-item"> <input class="app__list-checkbox" type="checkbox">от -15°C до 0°C</div>
-                <div class="grid-item"> <input class="app__list-checkbox" type="checkbox">Классический</div>
-                <div class="grid-item"> <input class="app__list-checkbox" type="checkbox">Снег</div>
-                <div class="grid-item"> <input class="app__list-checkbox" type="checkbox">от 0°C до +15°C</div>
-                <div class="grid-item"> <input class="app__list-checkbox" type="checkbox">Минимализм</div>
-                <div class="grid-item"> <input class="app__list-checkbox" type="checkbox">Ветер</div>
-                <div class="grid-item"> <input class="app__list-checkbox" type="checkbox">от +15°C и выше</div>
-                <div class="grid-item"> <input class="app__list-checkbox" type="checkbox">Современный</div>
+                <div class="grid-item"> <input class="app__list-checkbox" type="checkbox" name="weather" value="солнце">Солнце</div>
+                <div class="grid-item"> <input class="app__list-checkbox" type="checkbox" name="temperature" value="холодно">-15°C и ниже</div>
+                <div class="grid-item"> <input class="app__list-checkbox" type="checkbox" name="style" value="Спортивный">Спортивный</div>
+                <div class="grid-item"> <input class="app__list-checkbox" type="checkbox" name="weather" value="дождь">Дождь</div>
+                <div class="grid-item"> <input class="app__list-checkbox" type="checkbox" name="temperature" value="прохладно">от -15°C до 0°C</div>
+                <div class="grid-item"> <input class="app__list-checkbox" type="checkbox" name="style" value="Классический">Классический</div>
+                <div class="grid-item"> <input class="app__list-checkbox" type="checkbox" name="weather" value="снег">Снег</div>
+                <div class="grid-item"> <input class="app__list-checkbox" type="checkbox" name="temperature" value="тепло">от 0°C до +15°C</div>
+                <div class="grid-item"> <input class="app__list-checkbox" type="checkbox" name="style" value="Минимализм">Минимализм</div>
+                <div class="grid-item"> <input class="app__list-checkbox" type="checkbox" name="weather" value="ветер">Ветер</div>
+                <div class="grid-item"> <input class="app__list-checkbox" type="checkbox" name="temperature" value="жарко">от +15°C и выше</div>
+                <div class="grid-item"> <input class="app__list-checkbox" type="checkbox" name="style" value="Современный">Современный</div>
             </div>
         </div>
 
@@ -83,11 +83,11 @@
             <div class="Vector1"><img src="./Vector 1.svg" alt="Фото" /></div>
             <div class="custom-block" style="white-space: pre-wrap; font-family: Poiret One, sans-serif; font-size: 48px; text-align: left; color: #633800;margin-bottom: 50px;">Составить образ</div>
             <div class="container_vibora">
-                <div class="grid-con">
-                    <div class="cell"> </div>
-                    <div class="cell"> </div>
-                    <div class="cell"> </div>
-                    <div class="cell"> </div>
+                <div class="grid-con" id="result">
+                    <div class="cell" id="head"> </div>
+                    <div class="cell" id="up"> </div>
+                    <div class="cell" id="down"> </div>
+                    <div class="cell" id="shoes"> </div>
                 </div>
             </div>
             <div class="Vector2"><img src="./Vector 2.svg" alt="Фото" /></div>
@@ -104,5 +104,6 @@
             <div class="text-block">Часы работы: с 00:00 до 00:01</div>
         </div>
     </div>
+    <script src="./script.js"></script>
 </body>
 </html>
