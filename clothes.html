@@ -14,7 +14,6 @@
 </head>
 
 <body>
-    
     <div class="wrapper">
         <header class="header">
             <div class="left">
@@ -22,7 +21,7 @@
                     <img src="./moda.png" alt="Фото" height="69px" width="69px">
                 </div>
                 <div style="font-family: Poiret One, sans-serif; font-size: 48px; text-align: center; color: #633800; margin-top: 5px;">
-                    <a href="index.html" style="text-decoration: none; color: #633800;">YourLook</a>
+                    <a href="glavnaya.html" style="text-decoration: none; color: #633800;">YourLook</a>
                 </div>
             </div>
             
@@ -39,8 +38,8 @@
 
         <div class="grid-container">
             <div class="left-pro">
-                <div class="rectangle">
-                    <img src="">
+                <div class="rectangle_1">
+                    <img src="./0_c1902_8e4cdf84_orig.png" alt="Фото" class="image" width="100px">
                     <div class="text-pro">
                         <p>Добавить одежду</p>
                     </div>
@@ -64,15 +63,31 @@
                 </div>
             </div>
             <div class="container-oval">
-                <div class="oval"></div>
-                
+                <div class="oval">
+                    <p class="oval-text">Здесь вы можете добавить свою одежду и отнести её к определённой категории, чтобы наш составитель нарядов смог наиболее точно подобрать вам подходящий образ.</p>
+                </div>
             </div>
-            
-
+        </div>
+        <div class="grid-center-vibor">
+            <div class="text_cen" style="white-space: pre-wrap; font-family: Poiret One, sans-serif; font-size: 48px; text-align: left; color: #633800;margin-bottom: 50px;">
+                <p>Загруженные фото</p>
+            </div>
+            <div class="image-carousel">
+                <button class="arrow left2" onclick="prevItem('photo')" aria-label="Предыдущее изображение">&#9664;</button>
+                <div class="image-container-foto">
+                    <div class="rectang-foto" style="background-color: #FCF6EE;"></div> <!-- Прямоугольник 1 -->
+                    <div class="rectang-foto active" style="background-color: #FCF6EE;"></div> <!-- Прямоугольник 2 -->
+                    <div class="rectang-foto" style="background-color: #FCF6EE;"></div> <!-- Прямоугольник 3 -->
+                </div>
+                <button class="arrow right2" onclick="nextItem('photo')" aria-label="Следующее изображение">&#9654;</button>
+            </div>
         </div>
 
+
+
         <script src="./closer.js"></script> 
-    </body>
+    </div>
+</body>
 </html>
 
-<script>
+
