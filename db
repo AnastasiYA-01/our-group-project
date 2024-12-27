@@ -2,8 +2,7 @@
 CREATE DATABASE site;
 CREATE TABLE users (
     id SERIAL PRIMARY KEY,
-    name VARCHAR(255),
-    password VARCHAR(255)
+    name VARCHAR(255)
 );
 
 CREATE TYPE style_enum AS ENUM(
