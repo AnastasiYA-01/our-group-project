@@ -8,8 +8,8 @@ app.use(cors())
 app.use(bodyParser.urlencoded({extented: true}))
 const port = 5500
 
-document.getElementById('quizForm').addEventListener('submit', function(event) {
-    event.preventDefault()
+document.getElementById('quizForm').addEventListener('submit' {
+    
 
     const weatherOptions = document.querySelectorAll('input[name="weather"]:checked')
     const temperatureOptions = document.querySelectorAll('input[name="temperature"]:checked')
